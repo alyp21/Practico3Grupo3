@@ -53,6 +53,12 @@ public class Jframe extends javax.swing.JFrame {
             }
         });
 
+        txtpass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtpassActionPerformed(evt);
+            }
+        });
+
         REGISTRAR.setText("Registrar");
         REGISTRAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,6 +111,11 @@ public class Jframe extends javax.swing.JFrame {
         });
 
         VER.setText("Ver");
+        VER.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VERActionPerformed(evt);
+            }
+        });
 
         jDesktopPane1.setLayer(jPanel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
         jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -171,11 +182,21 @@ public class Jframe extends javax.swing.JFrame {
 
     private void OCULTARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OCULTARActionPerformed
         // TODO add your handling code here:
+        txtpass.setEchoChar('*');
     }//GEN-LAST:event_OCULTARActionPerformed
 
     private void txtUserKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtUserKeyTyped
         // TODO add your handling code here:
     }//GEN-LAST:event_txtUserKeyTyped
+
+    private void txtpassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtpassActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtpassActionPerformed
+
+    private void VERActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VERActionPerformed
+        // TODO add your handling code here:
+        txtpass.setEchoChar((char)0);
+    }//GEN-LAST:event_VERActionPerformed
 
     /**
      * @param args the command line arguments
