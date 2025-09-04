@@ -1,18 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package JFrame;
 
-/**
- *
- * @author thezu
- */
+import javax.swing.JOptionPane;
+
 public class InicioDeSesión extends javax.swing.JFrame {
 
-    /**
-     * Creates new form InicioDeSesión
-     */
     public InicioDeSesión() {
         initComponents();
     }
@@ -39,6 +31,7 @@ public class InicioDeSesión extends javax.swing.JFrame {
         VER = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Credenciales");
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 0, 18)); // NOI18N
         jLabel2.setText("INICIO DE SESION");
@@ -60,11 +53,26 @@ public class InicioDeSesión extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel4.setToolTipText("Ingrese las credenciales");
+        jPanel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel4.setName("Ingrese las credenciales"); // NOI18N
+
         Contraseña.setText("Contraseña");
 
         User.setText("Usuario");
 
+        txtUser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUserActionPerformed(evt);
+            }
+        });
+
         RegistrarseButton.setText("Registrarse");
+        RegistrarseButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RegistrarseButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -102,6 +110,11 @@ public class InicioDeSesión extends javax.swing.JFrame {
         );
 
         OCULTAR.setText("Ocultar");
+        OCULTAR.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                OCULTARActionPerformed(evt);
+            }
+        });
 
         VER.setText("Ver");
         VER.addActionListener(new java.awt.event.ActionListener() {
@@ -144,6 +157,8 @@ public class InicioDeSesión extends javax.swing.JFrame {
                 .addGap(62, 62, 62))
         );
 
+        jPanel4.getAccessibleContext().setAccessibleName("Ingrese las credenciales");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -162,7 +177,24 @@ public class InicioDeSesión extends javax.swing.JFrame {
 
     private void VERActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VERActionPerformed
         // TODO add your handling code here:
+        txtPass.setEchoChar((char)0);
     }//GEN-LAST:event_VERActionPerformed
+
+    private void txtUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUserActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtUserActionPerformed
+
+    private void OCULTARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OCULTARActionPerformed
+        // TODO add your handling code here:
+        txtPass.setEchoChar('*');
+    }//GEN-LAST:event_OCULTARActionPerformed
+
+    private void RegistrarseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrarseButtonActionPerformed
+        // TODO add your handling code here:
+        String u=txtUser.getText();
+        System.out.println(u+" "+txtPass.getText());
+        JOptionPane.showMessageDialog(this, "Mensaje de informacion", "INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_RegistrarseButtonActionPerformed
 
     /**
      * @param args the command line arguments
