@@ -191,8 +191,8 @@ public class InicioDeSesión extends javax.swing.JFrame {
 
     private void RegistrarseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrarseButtonActionPerformed
         // TODO add your handling code here:
-        String u=txtUser.getText();
-        System.out.println(u+" "+txtPass.getText());
+       String u=txtUser.getText();
+       System.out.println(u+" "+txtPass.getText());
         JOptionPane.showMessageDialog(this, "Mensaje de informacion", "INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_RegistrarseButtonActionPerformed
 
