@@ -193,11 +193,11 @@ public class InicioDeSesión extends javax.swing.JFrame {
 
     private void RegistrarseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrarseButtonActionPerformed
         // TODO add your handling code here:
-<<<<<<< HEAD
+
        String u=txtUser.getText();
        System.out.println(u+" "+txtPass.getText());
         JOptionPane.showMessageDialog(this, "Mensaje de informacion", "INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
-=======
+
          String usuario = txtUser.getText();
          String password = new String(txtPass.getPassword());
 
@@ -214,7 +214,7 @@ public class InicioDeSesión extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "Usuario y/o contraseña incorrectos");
                 }
                 //EMI Y CRISTIAN HICIERON ESTO, SEGUÍ JUGANDO AL ROBLOX ALY
->>>>>>> 0c7ca7f7ec332f01080ab4793caa71ab0d21a20f
+
     }//GEN-LAST:event_RegistrarseButtonActionPerformed
 
     public static void main(String args[]) {
