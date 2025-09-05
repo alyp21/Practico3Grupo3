@@ -53,6 +53,7 @@ public class InicioDeSesión extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel4.setToolTipText("Ingrese las credenciales");
         jPanel4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel4.setName("Ingrese las credenciales"); // NOI18N
@@ -173,6 +174,7 @@ public class InicioDeSesión extends javax.swing.JFrame {
         jDesktopPane2.getAccessibleContext().setAccessibleName("");
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void VERActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VERActionPerformed
@@ -191,20 +193,32 @@ public class InicioDeSesión extends javax.swing.JFrame {
 
     private void RegistrarseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrarseButtonActionPerformed
         // TODO add your handling code here:
+<<<<<<< HEAD
        String u=txtUser.getText();
        System.out.println(u+" "+txtPass.getText());
         JOptionPane.showMessageDialog(this, "Mensaje de informacion", "INFORMATION_MESSAGE", JOptionPane.INFORMATION_MESSAGE);
+=======
+         String usuario = txtUser.getText();
+         String password = new String(txtPass.getPassword());
+
+                if (usuario.equals("alumno@ulp.edu.ar") && password.equals("12345678")) {
+                    JOptionPane.showMessageDialog(null, "Bienvenido " + usuario);
+                } if (usuario.equals("Cristian") && password.equals("ola")) {
+                    JOptionPane.showMessageDialog(null, "Bienvenido " + usuario);
+                } if (usuario.equals("Aly") && password.equals("hola")) {
+                    JOptionPane.showMessageDialog(null, "Segui jugando al roblox " + usuario);
+                } if (usuario.equals("Emi") && password.equals("hola")) {
+                    JOptionPane.showMessageDialog(null, "Bienvenido " + usuario);
+                } 
+                else {
+                    JOptionPane.showMessageDialog(null, "Usuario y/o contraseña incorrectos");
+                }
+                //EMI Y CRISTIAN HICIERON ESTO, SEGUÍ JUGANDO AL ROBLOX ALY
+>>>>>>> 0c7ca7f7ec332f01080ab4793caa71ab0d21a20f
     }//GEN-LAST:event_RegistrarseButtonActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
