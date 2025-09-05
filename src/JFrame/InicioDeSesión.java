@@ -214,7 +214,6 @@ public class InicioDeSesión extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "Usuario y/o contraseña incorrectos");
                 }
                 //EMI Y CRISTIAN HICIERON ESTO, SEGUÍ JUGANDO AL ROBLOX ALY
-
     }//GEN-LAST:event_RegistrarseButtonActionPerformed
 
     public static void main(String args[]) {
