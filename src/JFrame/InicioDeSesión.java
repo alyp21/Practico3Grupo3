@@ -193,21 +193,14 @@ public class InicioDeSesión extends javax.swing.JFrame {
 
     private void RegistrarseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrarseButtonActionPerformed
         // TODO add your handling code here:
-         String usuario = txtUser.getText();
-         String password = new String(txtPass.getPassword());
+                String usuario = txtUser.getText();
+                String password = new String(txtPass.getPassword());
 
                 if (usuario.equals("alumno@ulp.edu.ar") && password.equals("12345678")) {
                     JOptionPane.showMessageDialog(null, "Bienvenido " + usuario);
-                } if (usuario.equals("Cristian") && password.equals("ola")) {
-                    JOptionPane.showMessageDialog(null, "Bienvenido " + usuario);
-                } if (usuario.equals("Aly") && password.equals("hola")) {
-                    JOptionPane.showMessageDialog(null, "Segui jugando al roblox " + usuario);
-                } if (usuario.equals("Emi") && password.equals("hola")) {
-                    JOptionPane.showMessageDialog(null, "Bienvenido " + usuario);
-                }else {
+                } else {
                     JOptionPane.showMessageDialog(null, "Usuario y/o contraseña incorrectos");
                 }
-                //EMI Y CRISTIAN HICIERON ESTO, SEGUÍ JUGANDO AL ROBLOX ALY
     }//GEN-LAST:event_RegistrarseButtonActionPerformed
 
     public static void main(String args[]) {
