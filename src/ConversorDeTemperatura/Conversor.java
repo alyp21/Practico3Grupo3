@@ -28,7 +28,6 @@ public class Conversor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
         jDesktopPane1 = new javax.swing.JDesktopPane();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -242,15 +241,7 @@ public class Conversor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-<<<<<<< HEAD
-    private javax.swing.JRadioButton ButtonFahre;
-    private javax.swing.JRadioButton ButtonKelvin;
-    private javax.swing.JRadioButton ButtonRadian;
-    private javax.swing.JButton ConvertirButton;
-=======
     private javax.swing.JButton btnConvertir;
->>>>>>> 5876bf65f14c83ce13973d589b4755c121c255bc
-    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
